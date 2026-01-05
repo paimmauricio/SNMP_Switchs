@@ -29,7 +29,7 @@ Devido a mudanças recentes na biblioteca `pysnmp`, é **necessário** instalar 
 1.  **Clone o repositório:**
     ```bash
     git clone [https://github.com/paimmauricio/SNMP_Switchs.git](https://github.com/paimmauricio/SNMP_Switchs.git)
-    cd snmp-port-mapper
+    cd SNMP_Switchs
     ```
 
 2.  **Crie um ambiente virtual (Recomendado):**
@@ -86,7 +86,7 @@ Ideal para inventário de grandes redes.
 10.0.0.254
 ```
 
-3. No menu do script, escolha a opção 2 e digite o nome do arquivo (ex: `lista.txt`).
+3. No menu do script, escolha a opção 2 e digite o nome do arquivo (ex: `switches.txt`).
 
 ## ⚙️ Personalização
 
