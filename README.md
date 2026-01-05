@@ -28,7 +28,7 @@ Devido a mudanças recentes na biblioteca `pysnmp`, é **necessário** instalar 
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/paimmauricio/snmp-port-mapper.git](https://github.com/paimmauricio/snmp-port-mapper.git)
+    git clone [https://github.com/paimmauricio/SNMP_Switchs.git](https://github.com/paimmauricio/SNMP_Switchs.git)
     cd snmp-port-mapper
     ```
 
