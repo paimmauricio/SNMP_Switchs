@@ -15,7 +15,23 @@ Este script em Python realiza o mapeamento automático de portas de switches de 
     -   *Lote (Batch):* Lê uma lista de IPs de um arquivo `.txt` e processa todos sequencialmente.
 -   **Exportação Automática:** Gera relatórios em `.txt` organizados por data e IP.
 
-## 🛠️ Pré-requisitos
+  ## 🚀 Novidades na Versão Universal
+
+Este script foi atualizado para atuar como um Scanner Universal de Switches, resolvendo problemas de compatibilidade com a linha HPE OfficeConnect.
+
+### Funcionalidades
+* **Estratégia Híbrida Inteligente:**
+    1.  Tenta leitura via **Q-BRIDGE MIB** (Ideal para HPE 1920S e switches modernos/Linux).
+    2.  Se falhar, tenta leitura via **Standard Bridge MIB** (Cisco, TP-Link, etc).
+    3.  Último recurso: Tenta contexto de VLAN Legado (`community@1`).
+* **Mapeamento Real de Portas:** Cruza o índice SNMP com a descrição da interface (ex: exibe `GE1/0/24` em vez de `24`).
+* **Identificação de Dispositivos:** Consulta API online para identificar o fabricante do dispositivo conectado (Apple, Dell, Intel, etc).
+
+### 📦 Instalação
+```bash
+pip install pysnmp requests
+```
+### 🛠️ Pré-requisitos
 
 -   Python 3.6+
 -   Acesso de rede aos switches (porta 161 UDP liberada).
